@@ -1,0 +1,60 @@
+:root {
+  --sigma-bg-color: #F5F9FC;
+  --sigma-border-color: #E2ECFC;
+  --sigma-color: #2F353D;
+  --sigma-color--gray: #8596A6;
+  --sigma-color-link: #0050D7;
+  --sigma-color-link--black: #41474F;
+  --sigma-color--hover: #0D51C4;
+
+  --sigma-gap: 32px;
+  --sigma-gap--medium: 24px;
+
+  --sigma-transition: all .3s ease-out;
+
+  --sigma-font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+
+  // Улучшаем рендеринг шрифтов на маках
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: var(--sigma-color--link);
+  transition: var(--sigma-transition);
+
+  &:hover {
+    color: var(--sigma-color--hover);
+  }
+}
+
+input {
+  border: none;
+  outline: none;
+  font-family: var(--sigma-font-family);
+}

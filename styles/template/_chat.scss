@@ -1,0 +1,41 @@
+.s-header-chat {
+  position: relative;
+
+  &__wrapper {
+    display: block;
+    padding: 8px;
+    background: #FDFEFF;
+    border-radius: 50%;
+    border: 1px solid var(--sigma-border-color);
+
+    svg {
+      transition: var(--sigma-transition);
+      fill: var(--sigma-color--gray);
+      stroke: var(--sigma-color--gray);
+    }
+
+    &:hover {
+      svg {
+        fill: var(--sigma-color--hover);
+        stroke: var(--sigma-color--hover);
+      }
+    }
+  }
+
+  &__badge {
+    position: absolute;
+    top: -16px;
+    right: -19px;
+    border-radius: 50%;
+    background: var(--sigma-color--hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+
+    width: 24px;
+    height: 24px;
+  }
+}

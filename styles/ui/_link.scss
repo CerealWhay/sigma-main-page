@@ -1,0 +1,22 @@
+.link {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  text-decoration: none;
+  color: var(--sigma-color-link);
+
+  &--black {
+    color: var(--sigma-color-link--black);
+  }
+
+  &--underline {
+    text-decoration: underline dashed;
+    text-underline-offset: 6px;
+  }
+
+  &:hover {
+    color: var(--sigma-color--hover);
+  }
+}

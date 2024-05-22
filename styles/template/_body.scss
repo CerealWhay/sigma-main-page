@@ -1,0 +1,22 @@
+.s-body {
+  background: var(--sigma-bg-color);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    width: 100%;
+    flex: 1 0 auto;
+
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+  &__footer {
+    width: 100%;
+    flex: 0 0 auto;
+    padding-top: var(--sigma-gap);
+    padding-bottom: 56px;
+    border-top: 1px solid var(--sigma-border-color);
+  }
+}
