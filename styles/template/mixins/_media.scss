@@ -1,0 +1,22 @@
+$lg: 824px;
+$xl: 1400px;
+$xxl: 1600px;
+
+@mixin lg-max {
+  @media (max-width: calc($lg - 1px)) {
+    @content;
+  }
+}
+
+@mixin xl-max {
+  @media (max-width: calc($xl - 1px)) {
+    @content;
+  }
+}
+
+@mixin xxl-max {
+  @media (max-width: calc($xxl - 1px)) {
+    @content;
+  }
+}
+

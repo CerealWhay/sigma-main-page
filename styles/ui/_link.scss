@@ -6,9 +6,11 @@
   text-align: left;
   text-decoration: none;
   color: var(--sigma-color-link);
+  fill: var(--sigma-color-link);
 
   &--black {
     color: var(--sigma-color-link--black);
+    fill: var(--sigma-color-link--black);
   }
 
   &--underline {
@@ -18,5 +20,6 @@
 
   &:hover {
     color: var(--sigma-color--hover);
+    fill: var(--sigma-color--hover);
   }
 }

@@ -7,9 +7,11 @@
   text-align: left;
   text-decoration: none;
   color: var(--sigma-color-link);
+  fill: var(--sigma-color-link);
 }
 .link--black {
   color: var(--sigma-color-link--black);
+  fill: var(--sigma-color-link--black);
 }
 .link--underline {
   text-decoration: underline dashed;
@@ -17,6 +19,7 @@
 }
 .link:hover {
   color: var(--sigma-color--hover);
+  fill: var(--sigma-color--hover);
 }
 
 :root {
@@ -394,16 +397,16 @@ input {
   fill: var(--sigma-color--hover);
 }
 
+.s-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .s-footer__subtitle {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
-}
-.s-footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
 }
 .s-footer__emails {
   flex-shrink: 0;
@@ -479,6 +482,22 @@ input {
   padding-left: var(--sigma-gap);
   max-width: 1600px;
   margin: 0 auto;
+}
+
+.s-content {
+  display: flex;
+  gap: var(--sigma-gap);
+  align-items: start;
+}
+.s-content__main {
+  width: 100%;
+}
+.s-content__aside {
+  flex-shrink: 0;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sigma-gap--medium);
 }
 
 /*# sourceMappingURL=style.css.map */

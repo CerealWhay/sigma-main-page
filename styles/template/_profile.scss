@@ -24,7 +24,7 @@
   &__dropdown {
     display: none;
     width: 280px;
-    padding-top: 16px;
+    padding-top: var(--sigma-gap--small);
     position: absolute;
     top: 100%;
     right: 0;
@@ -32,10 +32,10 @@
 
   &__wrapper {
     background: #FFFFFF;
-    border-radius: 16px;
+    border-radius: var(--sigma-border-radius);
     border: 1px solid var(--sigma-border-color);
     box-shadow: 0 2px 32px 2px #87B4F31F;
-    padding: 16px 0;
+    padding: var(--sigma-gap--small) 0;
   }
 
   &:hover {
@@ -53,7 +53,7 @@
     line-height: 23px;
 
     margin: 0 20px;
-    padding: 0 0 16px;
+    padding: 0 0 var(--sigma-gap--small);
     border-bottom: 1px solid var(--sigma-border-color);
   }
   &__body {

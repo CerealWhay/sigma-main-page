@@ -14,7 +14,7 @@
     border-bottom: 1px solid var(--sigma-bg-color);
     transition: var(--sigma-transition);
     padding-bottom: 8px;
-    padding-right: 24px;
+    padding-right: var(--sigma-gap--medium);
 
     &::placeholder {
       color: var(--sigma-color--gray);

@@ -1,14 +1,22 @@
 :root {
   --sigma-bg-color: #F5F9FC;
+  --sigma-bg-color--blue: #FAFCFF;
+
   --sigma-border-color: #E2ECFC;
+
   --sigma-color: #2F353D;
   --sigma-color--gray: #8596A6;
+  --sigma-color--blue: #5FA0FF;
+
   --sigma-color-link: #0050D7;
   --sigma-color-link--black: #41474F;
   --sigma-color--hover: #0D51C4;
 
   --sigma-gap: 32px;
   --sigma-gap--medium: 24px;
+  --sigma-gap--small: 16px;
+
+  --sigma-border-radius: 16px;
 
   --sigma-transition: all .3s ease-out;
 
@@ -23,9 +31,13 @@
 
 html, body {
   height: 100%;
+
+  font-family: var(--sigma-font-family);
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--sigma-color);
+  min-width: 1200px;
 
   // Улучшаем рендеринг шрифтов на маках
   -webkit-font-smoothing: antialiased;
