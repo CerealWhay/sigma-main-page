@@ -1,0 +1,21 @@
+.s-btn-link {
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--sigma-color--gray);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 9px;
+  border: 1px solid var(--sigma-border-color);
+  border-radius: var(--sigma-border-radius);
+  background: #FFFFFF;
+
+  &:hover {
+    background: var(--sigma-color--hover);
+    border-color: var(--sigma-color--hover);
+    color: #FFFFFF;
+  }
+}

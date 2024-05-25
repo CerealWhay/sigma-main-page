@@ -1,0 +1,26 @@
+.s-island {
+  border: 1px solid var(--sigma-border-color);
+  border-radius: var(--sigma-border-radius);
+  background: #FFFFFF;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sigma-gap--small);
+    align-items: stretch;
+    padding: 20px var(--sigma-gap--medium) var(--sigma-gap--medium);
+
+    &--small {
+      padding: 20px;
+    }
+  }
+
+  &__head {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sigma-gap--small);
+  }
+}
