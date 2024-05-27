@@ -1,0 +1,39 @@
+.main-docs {
+
+  --main-docs-row-items: 3;
+
+  @include xl-max {
+    --main-docs-row-items: 2;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(var(--main-docs-row-items), 1fr);
+  }
+}
+
+.main-docs-item {
+  padding: 1.25rem 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: start;
+  justify-content: space-between;
+
+  &:hover {
+    border-color: var(--sigma-color--hover);
+  }
+
+  &__title {
+    line-height: 1.5rem;
+  }
+
+  &__date {
+    font-size: 13px;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    color: var(--sigma-color--gray);
+  }
+}

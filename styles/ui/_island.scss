@@ -1,26 +1,37 @@
 .s-island {
-  border: 1px solid var(--sigma-border-color);
-  border-radius: var(--sigma-border-radius);
-  background: #FFFFFF;
+  --s-island-backgroud: var(--sigma-color--white);
+  --s-island-border: var(--sigma-border);
+
+  border: var(--s-island-border);
+  border-radius: 1rem;
+  background: var(--s-island-backgroud);
+
+  &--blue {
+    --s-island-backgroud: var(--sigma-bg-color--blue);
+  }
+
+  &--dashed {
+    --s-island-border: var(--sigma-border--dashed);
+  }
 
   &__box {
     display: flex;
     flex-direction: column;
-    gap: var(--sigma-gap--small);
+    gap: 1rem;
     align-items: stretch;
-    padding: 20px var(--sigma-gap--medium) var(--sigma-gap--medium);
+    padding: 1.25rem 1.5rem 1.5rem;
 
     &--small {
-      padding: 20px;
+      padding: 1.25rem;
     }
   }
 
   &__head {
-    min-height: 48px;
+    min-height: 3rem;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--sigma-gap--small);
+    gap: 1rem;
   }
 }

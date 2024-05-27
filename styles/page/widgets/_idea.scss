@@ -1,0 +1,30 @@
+.s-widget-idea {
+  background: linear-gradient(25.07deg, #5FA0FF -4.31%, #337AEC 52.97%, #004FD6 105.62%);
+  color: var(--sigma-color--white);
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__visual {
+    margin-top: 0.75rem;
+  }
+
+  &__visual-img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+  }
+
+  &__btn {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,7 +1,7 @@
 .s-btn-link {
   flex-shrink: 0;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.25rem;
   color: var(--sigma-color--gray);
 
   display: flex;
@@ -9,13 +9,13 @@
   justify-content: center;
 
   padding: 7px 9px;
-  border: 1px solid var(--sigma-border-color);
-  border-radius: var(--sigma-border-radius);
-  background: #FFFFFF;
+  border: var(--sigma-border);
+  border-radius: 1rem;
+  background: var(--sigma-color--white);
 
   &:hover {
     background: var(--sigma-color--hover);
     border-color: var(--sigma-color--hover);
-    color: #FFFFFF;
+    color: var(--sigma-color--white);
   }
 }
