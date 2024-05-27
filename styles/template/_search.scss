@@ -7,14 +7,14 @@
 
   &__input {
     color: var(--sigma-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
     border-bottom: 1px solid var(--sigma-bg-color);
     transition: var(--sigma-transition);
-    padding-bottom: 8px;
-    padding-right: var(--sigma-gap--medium);
+    padding-bottom: 0.5rem;
+    padding-right: 1.5rem;
 
     &::placeholder {
       color: var(--sigma-color--gray);

@@ -154,8 +154,7 @@ input {
 .s-body__footer {
   width: 100%;
   flex: 0 0 auto;
-  padding-top: var(--sigma-gap);
-  padding-bottom: 56px;
+  padding: var(--sigma-gap) var(--sigma-gap) 56px;
   border-top: 1px solid var(--sigma-border-color);
 }
 
@@ -174,8 +173,7 @@ input {
 .s-body__footer {
   width: 100%;
   flex: 0 0 auto;
-  padding-top: var(--sigma-gap);
-  padding-bottom: 56px;
+  padding: var(--sigma-gap) var(--sigma-gap) 56px;
   border-top: 1px solid var(--sigma-border-color);
 }
 

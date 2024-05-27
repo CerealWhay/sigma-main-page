@@ -1,4 +1,7 @@
 .s-footer {
+  --footer-svg-color: var(--sigma-color-link--black);
+  --footer-svg-social-color: var(--sigma-color-link);
+
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -14,26 +17,24 @@
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    gap: var(--sigma-gap--medium);
+    gap: 1.5rem;
   }
 
   &__email {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 23px;
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
     align-items: start;
 
     &:hover {
-      .s-footer__email-svg {
-        fill: var(--sigma-color--hover);
-      }
+      --footer-svg-color: var(--sigma-color--hover);
     }
   }
 
   &__email-svg {
     transition: var(--sigma-transition);
-    fill: var(--sigma-color-link--black);
+    fill: var(--footer-svg-color);
   }
 
   &__logo {
@@ -50,37 +51,37 @@
   &__emails-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   &__links {
     min-width: 666px;
     display: flex;
     flex-direction: column;
-    gap: var(--sigma-gap--medium);
+    gap: 1.5rem;
   }
 
   &__link {
-    font-size: 16px;
+    font-size: 1rem;
     width: fit-content;
   }
 
   &__links-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 12px;
+    row-gap: 0.75rem;
   }
 
   &__socials {
     display: flex;
     flex-direction: column;
-    gap: var(--sigma-gap--medium);
+    gap: 1.5rem;
     flex-shrink: 0;
   }
 
   &__socials-wrapper {
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
   }
 
   &__social {
@@ -88,13 +89,11 @@
 
     svg {
       transition: var(--sigma-transition);
-      fill: var(--sigma-color-link);
+      fill: var(--footer-svg-social-color);
     }
 
     &:hover {
-      svg {
-        fill: var(--sigma-color--hover);
-      }
+      --footer-svg-social-color: var(--sigma-color--hover);
     }
   }
 }

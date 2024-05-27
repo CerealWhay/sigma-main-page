@@ -1,24 +1,25 @@
 .s-header-chat {
+  --header-chat-svg-fill: var(--sigma-color--gray);
+  --header-chat-svg-stroke: var(--sigma-color--gray);
+
   position: relative;
 
   &__wrapper {
     display: block;
-    padding: 8px;
+    padding: 0.5rem;
     background: #FDFEFF;
     border-radius: 50%;
-    border: 1px solid var(--sigma-border-color);
+    border: var(--sigma-border);
 
     svg {
       transition: var(--sigma-transition);
-      fill: var(--sigma-color--gray);
-      stroke: var(--sigma-color--gray);
+      fill: var(--header-chat-svg-fill);
+      stroke: var(--header-chat-svg-fill);
     }
 
     &:hover {
-      svg {
-        fill: var(--sigma-color--hover);
-        stroke: var(--sigma-color--hover);
-      }
+      --header-chat-svg-fill: var(--sigma-color--hover);
+      --header-chat-svg-stroke: var(--sigma-color--hover);
     }
   }
 
@@ -31,11 +32,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: var(--sigma-color--white);
     font-size: 14px;
     font-weight: 500;
 
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
