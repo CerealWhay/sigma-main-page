@@ -16,23 +16,6 @@
     gap: 0.5rem;
     margin-bottom: 1rem;
   }
-
-  &__prev,
-  &__next {
-    cursor: pointer;
-    border: var(--sigma-border);
-    background: var(--sigma-color--white);
-    border-radius: 0.5rem;
-    padding: 6px;
-    fill: #1A1D21;
-    transition: var(--sigma-transition);
-
-    &:hover {
-      fill: var(--sigma-color--white);
-      border-color: var(--sigma-color--hover);
-      background: var(--sigma-color--hover);
-    }
-  }
 }
 
 

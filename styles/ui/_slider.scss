@@ -1,0 +1,31 @@
+.s-slider-nav-btn {
+  cursor: pointer;
+  border: var(--sigma-border);
+  background: var(--sigma-color--white);
+  border-radius: 0.5rem;
+  padding: 6px;
+  fill: #1A1D21;
+  transition: var(--sigma-transition);
+
+  &:hover {
+    fill: var(--sigma-color--white);
+    border-color: var(--sigma-color--hover);
+    background: var(--sigma-color--hover);
+  }
+}
+
+.s-slider-pagination {
+  display: flex;
+  position: absolute;
+  left: 50% !important;
+  width: auto !important;
+  transform: translateX(-50%);
+
+  --swiper-pagination-bottom: 1rem;
+  --swiper-pagination-bullet-width: 25px;
+  --swiper-pagination-bullet-height: 5px;
+  --swiper-pagination-bullet-border-radius: 5px;
+  --swiper-pagination-bullet-inactive-color: var(--sigma-bg-color);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-color: var(--sigma-color-link);
+}

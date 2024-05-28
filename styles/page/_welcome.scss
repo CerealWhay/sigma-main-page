@@ -1,0 +1,49 @@
+.main-welcome {
+  background: radial-gradient(34.45% 81.1% at 85.83% 39.85%, #AECFFF 0%, #EFF6FF 100%);
+  border-radius: 1rem;
+  width: 100%;
+  padding: 3rem 2rem 4.25rem;
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+  }
+
+  &__bg-img {
+    height: 100%;
+    width: auto;
+  }
+
+  &__wrapper {
+    width: 465px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 43px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: var(--sigma-color-link--black);
+  }
+
+  &__form {
+    margin-top: 122px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}

@@ -19,4 +19,17 @@ document.addEventListener('DOMContentLoaded', () => {
             },
         }
     });
+
+    new Swiper(".banners-slider", {
+        loop: true,
+
+        navigation: {
+            nextEl: ".banners-slider__next",
+            prevEl: ".banners-slider__prev",
+        },
+
+        pagination: {
+            el: '.banners-slider__pagination',
+        },
+    });
 })
